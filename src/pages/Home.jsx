@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom';
 import { BackgroundRippleEffect } from "../components/ui/BackgroundRipple.jsx";
+// Pastikan import .js/.jsx sesuai nama file Anda
+import { Boxes } from "../components/ui/background-boxes.tsx"; 
+import { Meteors } from "../components/ui/meteors.tsx";
 
 function Home() {
   return (
-    <div className="">
+    // 1. Tambahkan "relative" di sini
+    <div className="relative">
       <BackgroundRippleEffect /> 
-      <div className="absolute inset-0 z-10 flex flex-col items-center text-center p-8 pointer-events-none">
+      {/* <Boxes /> */}
+       <Meteors number={50} />
+
+      {/* 2. Hapus "absolute inset-0" dan ganti dengan "relative" */}
+      <div className="relative z-10 flex flex-col items-center text-center p-8 pointer-events-none">
         <h1 className="mb-4 text-4xl font-semibold text-white pointer-events-auto">
           Selamat Datang di Kuis GYPEM
         </h1>
@@ -34,10 +42,9 @@ function Home() {
             Join game
           </Link>
           </div>
+          
         </div>
-        
       </div>
-
     </div>
   );
 }
