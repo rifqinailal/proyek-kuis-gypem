@@ -1,12 +1,20 @@
+import { Link } from 'react-router-dom';
+
 function Lobby() {
   return (
     <div className="relative">
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#51146c] p-6 gap-2">
         <div className="bg-base-100 shadow-xl rounded-2xl p-8 w-full max-w-3xl">
           <h1 className="text-3xl font-bold text-center mb-6 text-warning">
-            Apakah kamu siap
+            Apakah semua Anggota sudah siap semua ?
           </h1>
-          <button className="btn btn-warning w-full mt-3">Siap?</button>
+          {/* <button className="btn btn-warning w-full mt-3">Siap?</button> */}
+          <Link
+            to="/game/:roomId"
+            className="btn btn-warning w-full mt-3"
+          >Mulai
+          </Link>
+         
 
 
         </div>
@@ -22,6 +30,7 @@ function Lobby() {
                 <div className="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
               </div>
               <h1 className="badge badge-warning p-4 min-w-28">Siap</h1>
+              <button className="badge badge-error py-4 min-w-20">Hapus</button>
             </li>
 
             <li className="list-row">
@@ -31,15 +40,19 @@ function Lobby() {
                 <div className="text-xs uppercase font-semibold opacity-60">Bears of a fever</div>
               </div>
               <h1 className="badge badge-warning p-4 min-w-28">Belum Siap</h1>
+              <button className="badge badge-error py-4 min-w-20">Hapus</button>
             </li>
 
-            <li className="list-row">
+            <li className="list-row items-center">
               <div><img className="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/3@94.webp" /></div>
               <div>
                 <div>Sabrino Gardener</div>
                 <div className="text-xs uppercase font-semibold opacity-60">Cappuccino</div>
               </div>
-              <h1 className="badge badge-warning p-4 min-w-28">Siap</h1>
+              <h1 className="badge badge-warning py-4 min-w-28">Siap</h1>
+              <button className="badge badge-error py-4 min-w-20">Hapus</button>
+
+
             </li>
 
           </ul>

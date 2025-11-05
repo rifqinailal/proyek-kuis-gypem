@@ -12,7 +12,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 px-5 flex items-center">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 px-5 flex items-center lg:hidden">
             <li><a>Item 1</a></li>
             <li><a>Parent</a></li>
             <li><a>Item 3</a></li>
