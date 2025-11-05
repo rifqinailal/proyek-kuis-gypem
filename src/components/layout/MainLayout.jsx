@@ -17,7 +17,7 @@ function MainLayout() {
 
       {/* 3. Tambahkan 'overflow-y-auto' di sini! */}
       {/* Ini adalah area yang akan bisa di-scroll */}
-      <main className="flex-grow relative overflow-y-auto">
+      <main className="flex-grow relative overflow-y-auto bg-[#51146c]">
         <Outlet />
       </main>
       
