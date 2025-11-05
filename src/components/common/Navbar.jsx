@@ -18,7 +18,7 @@ function Navbar() {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">GYPEM</a>
+        <a className="text-xl font-normal">GYPEM</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
